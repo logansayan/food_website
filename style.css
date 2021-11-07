@@ -1,0 +1,290 @@
+/* CSS RESET */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* CSS VARIABLES */
+:root {
+  --navbar-height: 100%;
+}
+/* NAVIGATION BAR */
+#navbar {
+  display: flex;
+  align-items: center;
+  position: absolute;
+}
+#navbar::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+  opacity: 0.4;
+}
+/* NAVIGATION BAR: LOGO AND IMAGE */
+#logo {
+  margin: 10px 34px;
+}
+#logo img {
+  height: 59px;
+  margin: 3px 6px;
+}
+
+/* NAVIGATION BAR: LIST STYLING */
+#navbar ul {
+  display: flex;
+  z-index: 999;
+}
+
+#navbar ul li {
+  list-style: none;
+  font-size: 1.3rem;
+  text-shadow: 20px;
+  z-index: 999;
+}
+#navbar ul li a {
+  font-family: "Poppins", sans-serif;
+  display: block;
+  padding: 3px 22px;
+  border-radius: 20px;
+  text-decoration: none;
+  color: white;
+  z-index: 999;
+}
+#navbar ul li a:hover {
+  color: black;
+  background-color: white;
+  text-transform: uppercase;
+  transition: background-color 0.6s ease;
+}
+/* HOME SECTION */
+#home::before {
+  content: "";
+  background: url(https://images.unsplash.com/photo-1534080564583-6be75777b70a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80)
+    no-repeat center center/cover;
+  position: absolute;
+  height: 500px;
+  top: 0px;
+  left: 0px;
+  height: 100vh;
+  width: 100%;
+  z-index: -999;
+}
+
+#home {
+  position: relative;
+  background-blend-mode: darken;
+  display: flex;
+  flex-direction: column;
+  padding: 3px 200px;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 14px;
+}
+
+/* SERVICES SECTION */
+#services-container {
+  background: url(https://images.unsplash.com/photo-1505826759037-406b40feb4cd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1952&q=80)
+    center/cover;
+  height: 100vh;
+  padding-top: 100px;
+}
+#services {
+  margin: 34px;
+  display: flex;
+}
+#services::before {
+  content: "";
+  position: absolute;
+  height: 100vh;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.89;
+}
+#services .box {
+  border: 2px solid brown;
+  padding: 34px;
+  margin: 3px 6px;
+  border-radius: 28px;
+  background-color: rgb(189, 175, 175);
+}
+#services .box img {
+  height: 160px;
+  margin: auto;
+  display: block;
+}
+#services .box p {
+  font-family: "Josefin Sans", sans-serif;
+  font-style: italic;
+  width: 400px;
+}
+/* CONTACT SECTION */
+#contact {
+  position: relative;
+}
+#contact::before {
+  content: "";
+  background: url(contact.jpg) no-repeat center/cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.7;
+}
+
+/* CLIENTS SECTION */
+#client-section {
+  height: 344px;
+  position: relative;
+}
+#client-section::before {
+  content: "";
+  position: absolute;
+  background: url() center;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+  opacity: 0.4;
+}
+#clients {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.client-item {
+  padding: 34px;
+  position: relative;
+}
+#clients img {
+  height: 80px;
+}
+#contact-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 34px;
+}
+#contact-box form {
+  width: 40%;
+}
+#contact-box label {
+  font-size: 1.3rem;
+  font-family: "Bree Serif", sans-serif;
+}
+.form-group {
+  padding-bottom: 20px;
+}
+
+#contact-box input,
+#contact-box textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 9px;
+  font-size: 1.1rem;
+}
+footer {
+  background: black;
+  color: white;
+  padding: 9px 20px;
+}
+.form-group textarea {
+  font-family: sans-serif;
+}
+
+.button {
+  border-radius: 15px;
+  background: white;
+  display: inline-block;
+  box-sizing: border-box;
+  text-transform: uppercase;
+}
+
+/* UTILITY CLASSES */
+.client-contact {
+  background: url(https://images.unsplash.com/photo-1505826759037-406b40feb4cd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1952&q=80)
+    no-repeat center center/cover;
+}
+.client-contact h1,
+#services-container h1 {
+  color: white;
+}
+#home h1 {
+  color: #dfdfdf;
+  text-align: center;
+  font-family: "Megrim", sans-serif;
+  text-shadow: 2px 2px black;
+}
+#home h1 span {
+  color: crimson;
+  font-family: "Caveat", sans-serif;
+  text-shadow: 2px 2px;
+}
+#home h1 span:hover {
+  color: crimson;
+  text-shadow: 2px 2px 5px;
+  text-decoration: underline;
+}
+#home p {
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "Josefin Sans", sans-serif;
+  text-shadow: 2px 2px black;
+}
+
+.h-primary {
+  position: relative;
+  font-size: 2.8rem;
+  padding: 12px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 100;
+}
+.h-secondary {
+  font-size: 1.5rem;
+  padding: 12px;
+  font-family: "Acme", sans-serif;
+}
+.btn {
+  padding: 6px 20px;
+  border: 2px solid white;
+  background-color: brown;
+  color: white;
+  margin: 25px;
+  font-size: 1.5rem;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.btn a {
+  text-decoration: none;
+  color: white;
+  font-family: sans-serif;
+}
+
+.center {
+  text-align: center;
+}
+
+/* SUBMIT BUTTON */
+.submit-button {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+#submit-btn {
+  font-family: "Raleway", sans-serif;
+  padding: 15px 30px;
+  text-transform: uppercase;
+  border: none;
+  background-color: crimson;
+  font-size: 20px;
+  font-weight: bolder;
+  color: #dfdfdf;
+  border: 2px solid #dfdfdf;
+  cursor: pointer;
+}
